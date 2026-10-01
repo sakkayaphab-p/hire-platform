@@ -4,6 +4,20 @@
 
 Turborepo + pnpm monorepo. Next.js app with shadcn/ui (preset `b7Vp9t9TU`, style `base-mira`).
 
+## Product
+
+GetLinks Hire Platform: a Thai-first, LINE-native AI hiring platform. Its core feature is
+**application workflows** — a visual builder (rounds → blocks of trigger + actions) that automates the
+candidate journey, mocked from Alex's workflow docs. **Build against the PRD** and update it in the
+same change if scope moves:
+
+@docs/prd/application-workflows.md
+
+Index of product docs: `docs/prd/README.md`. Requirements are numbered `FR-n`; cite them in commits
+and tickets. v1 is native (no ATS sync, no job workflows, no phone calls); see the PRD's phasing.
+
+## Layout
+
 | Path | What |
 |---|---|
 | `apps/web` | Next.js app (App Router) |
