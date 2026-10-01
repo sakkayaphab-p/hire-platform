@@ -5,7 +5,7 @@
 | Goal | A clickable mock of the whole platform, so the flow can be reviewed before any backend exists |
 | Scope | **Frontend only.** Static TypeScript fixtures, no API, no database, no real auth, no real messages |
 | Spec | [`docs/prd/application-workflows.md`](../prd/application-workflows.md) (requirements `FR-n`) |
-| Status | Not started — 2026-10-01 |
+| Status | Phase 0 done — 2026-10-01 |
 
 **How to use:** tick a box (`- [x]`) in the same commit that lands the item. A phase is done when
 all its boxes are ticked and `pnpm lint && pnpm typecheck && pnpm build` pass.
@@ -63,18 +63,18 @@ Sidebar navigation: **Jobs**, **Workflows**, **Interview guides**, **Settings**.
 
 ## Phase 0 — Foundation
 
-- [ ] Read the Next 16 App Router docs for layouts, route groups, dynamic routes and `params`
-- [ ] Add shadcn components: sidebar, tabs, table, card, badge, dialog, sheet, dropdown-menu, input,
+- [x] Read the Next 16 App Router docs for layouts, route groups, dynamic routes and `params`
+- [x] Add shadcn components: sidebar, tabs, table, card, badge, dialog, sheet, dropdown-menu, input,
       label, select, textarea, switch, tooltip, separator, avatar, breadcrumb, skeleton, sonner
-- [ ] Add `@xyflow/react` to `apps/web`
-- [ ] App shell `app/(app)/layout.tsx`: sidebar nav, header with breadcrumb, theme toggle, TH/EN
+- [x] Add `@xyflow/react` to `apps/web`
+- [x] App shell `app/(app)/layout.tsx`: sidebar nav, header with breadcrumb, theme toggle, TH/EN
       switch (placeholder), user menu
-- [ ] Mock data module `lib/mock/`:
-  - [ ] types (Job, Candidate, Application, Workflow, Round, Block, Node, InterviewGuide, Run,
+- [x] Mock data module `lib/mock/`:
+  - [x] types (Job, Candidate, Application, Workflow, Round, Block, Node, InterviewGuide, Run,
         StepExecution, HistoryEntry)
-  - [ ] fixtures: 4 jobs, ~30 candidates, 3 workflows, 3 guides, runs and history entries
-  - [ ] node catalogue: triggers (PRD §4.2), actions (§4.3), utilities (§4.4)
-- [ ] Replace the starter `app/page.tsx` with a redirect to `/jobs`
+  - [x] fixtures: 4 jobs, ~30 candidates, 3 workflows, 3 guides, runs and history entries
+  - [x] node catalogue: triggers (PRD §4.2), actions (§4.3), utilities (§4.4)
+- [x] Replace the starter `app/page.tsx` with a redirect to `/jobs`
 
 ## Phase 1 — Jobs and candidates
 

@@ -1,4 +1,5 @@
-import { Geist, Geist_Mono, Noto_Sans } from "next/font/google"
+import type { Metadata } from "next"
+import { Geist_Mono, Noto_Sans } from "next/font/google"
 
 import "@workspace/ui/globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
@@ -10,6 +11,11 @@ const fontMono = Geist_Mono({
   subsets: ["latin"],
   variable: "--font-mono",
 })
+
+export const metadata: Metadata = {
+  title: "GetLinks Hire",
+  description: "AI hiring platform with visual application workflows",
+}
 
 export default function RootLayout({
   children,
