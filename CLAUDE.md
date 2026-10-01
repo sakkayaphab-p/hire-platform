@@ -16,6 +16,9 @@ same change if scope moves:
 Index of product docs: `docs/prd/README.md`. Requirements are numbered `FR-n`; cite them in commits
 and tickets. v1 is native (no ATS sync, no job workflows, no phone calls); see the PRD's phasing.
 
+Active plan: `docs/plans/mock-page-flow.md` — a frontend-only mock of the page flow. Tick its
+checkboxes in the same commit that lands each item.
+
 ## Layout
 
 | Path | What |
